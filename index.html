@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <script src = "index.js" defer></script>
+    <link rel= "stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">  
+</head>
+<body>
+    <div class = "container">
+        <h1> Password Generator</h1>
+        <div class = "child">
+            <h2>Enter Criteria for your Password</h2>
+            <div class="slide-container spacebetweenelements">
+                <input type="range" min="1" max="125" value="50" class="slider" id="myRange">
+              </div>
+            <div id="pwdlenght spacebetweenelements">
+                <label>Password length</label>
+                <input type="number" id="length" min='8' max='128'/>
+ 
+             </div>
+ 
+             <div id = "chboxuppercase" >
+                 <label>Include Uppercase letters</label>
+                 <input type="checkbox" id="uppercase"/>
+ 
+             </div>
+ 
+             <div id = "chboxlowercase ">
+                 <label>Include Lowercase letters</label>
+                 <input type="checkbox" id="uppercase"/>
+ 
+             </div>
+ 
+             <div id = "chboxnumbers ">
+                 <label>Include Numbers</label>
+                 <input type="checkbox" id="numbers"/>
+                 
+             </div>
+ 
+             <div id = "chboxsymbols">
+                 <label>Uppercase letters </label>
+                 <input type="checkbox" id="uppercase"/>
+ 
+             </div>
+             <div class = "resultsbox">
+                <button class="generatepassword" id="newpassword">Generate Password</button>
+            </div>    
+         
+ 
+ 
+         </div>
+ 
+    <div class = "passwordbox">
+        <span id="password">This is your password</span>
+        <button class="btnCopy" id="clipboard">Copy Password</button>
+    </div>    
+ 
+       
+    </div>
+
+    </div>
+ </body>
+</html>

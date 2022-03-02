@@ -1,0 +1,50 @@
+h1{
+    font-size: 10vh;
+    font-family: 'Roboto', sans-serif;
+}
+h2{
+    font-size: 6vh;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+.child{
+    flex: 1;
+    text-align: center;
+    background-color: white;
+    width: 600px;
+    border-radius: 10px;
+    padding: 30px 50px;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+    margin-bottom: 20px;
+}
+.passwordbox{
+    flex: 1;
+    text-align: center;
+    background-color: white;
+    width: 600px;
+    border-radius: 10px;
+    padding: 30px 50px;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+    margin-bottom: 20px;
+}
+.spacebetweenelements{
+    margin-bottom: 20px;
+}
+.chboxsymbols{
+    margin-bottom: 50px;
+}
+button{
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
