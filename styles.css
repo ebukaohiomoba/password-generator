@@ -32,6 +32,8 @@ h2{
     padding: 30px 50px;
     box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
 }
 .spacebetweenelements{
     margin-bottom: 20px;
