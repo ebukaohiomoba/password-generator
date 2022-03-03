@@ -2,17 +2,26 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 h1{
+    margin-top: 10%;
     font-size: 10vh;
     font-family: 'Roboto', sans-serif;
-    color: #1C4143;
-}
-h1:hover {
     color: #311C43
 }
+@media screen and (max-width: 600px) {
+    h1 {
+      font-size: 30px;
+    }
+  }
+
 h2{
     font-size: 6vh;
     font-family: 'Roboto', sans-serif;
 }
+@media screen and (max-width: 600px) {
+    h2 {
+      font-size: 30px;
+    }
+  }
 .container{
     display: flex;
     justify-content: center;
@@ -20,6 +29,11 @@ h2{
     height: 100vh;
     flex-direction: column;
 }
+@media screen and (max-width: 600px) {
+    .container {
+      height: auto;
+    }
+  }
 .child{
     flex: 1;
     text-align: center;
@@ -32,8 +46,17 @@ h2{
     box-shadow: 0 10px 25px #311C43;
     margin-bottom: 20px;
     font-size: 20px;
+    flex-wrap: wrap;
 }
-
+@media screen and (max-width: 600px) {
+    .child {
+    width:auto;
+    border-radius: 10px;
+    padding:10px 20px;
+    margin-bottom: 20px;
+    font-size: 10px;
+    }
+}
 .passwordbox{
     text-align: center;
     background-color: #1A1E41;
@@ -45,10 +68,23 @@ h2{
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
 }
+@media screen and (max-width: 600px) {
+    .passwordbox {
+    width:auto;
+    border-radius: 10px;
+    padding:10px 20px;
+    margin-bottom: 20px;
+    font-size: 10px;
+    }
+}
+
 .passwordresult{
     display:flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 button {
@@ -82,9 +118,22 @@ button:active {
     justify-content: space-between;
     margin: 10px 0;
 }
+
+@media screen and (max-width: 600px){
+    #pwdlength, #chboxuppercase, #chboxuppercase, #chboxlowercase, #chboxnumbers, #chboxsymbols {
+    font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    input[type="checkbox"] {
+    height: 50px;
+    width: 50px;
+    }
+}
 input[type="checkbox"] {
-    height: 20px;
-    width: 30px;
+    height: 30px;
+    width: 40px;
 }
 input[type=text], select {
     width: 100%;
@@ -95,7 +144,7 @@ input[type=text], select {
     border-radius: 4px;
     box-sizing: border-box;
   }
-  input[type=number], select {
+input[type=number], select {
     width:10%;
     padding: 6px 10px;
     margin: 8px 0;
