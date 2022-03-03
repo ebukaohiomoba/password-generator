@@ -1,6 +1,13 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
 h1{
     font-size: 10vh;
     font-family: 'Roboto', sans-serif;
+    color: #1C4143;
+}
+h1:hover {
+    color: #311C43
 }
 h2{
     font-size: 6vh;
@@ -16,28 +23,84 @@ h2{
 .child{
     flex: 1;
     text-align: center;
-    background-color: white;
-    width: 600px;
+    background-color: #1A1E41;
+    flex-direction: column;
+    color: white;
+    width: 700px;
     border-radius: 10px;
     padding: 30px 50px;
-    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+    box-shadow: 0 10px 25px #311C43;
     margin-bottom: 20px;
+    font-size: 20px;
 }
+
 .passwordbox{
-    flex: 1;
     text-align: center;
-    background-color: white;
-    width: 600px;
+    background-color: #1A1E41;
+    color: rgba(255, 255, 255, 0.699);
+    width: 700px;
     border-radius: 10px;
     padding: 30px 50px;
-    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+    box-shadow: 0 10px 25px #311C43;
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
 }
-.spacebetweenelements{
-    margin-bottom: 20px;
+.passwordresult{
+    display:flex;
+    flex-direction: column;
 }
-.chboxsymbols{
-    margin-bottom: 50px;
+
+button {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #824caf;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 0 3px rgb(247, 241, 241);
+    margin-bottom: 15px;
+  }
+  
+button:hover {
+    background-color: #563e8e;
 }
+  
+button:active {
+    background-color: #673e8e;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+#pwdlength-spacebetweenelements, #chboxuppercase, #chboxlowercase, #chboxnumbers, #chboxsymbols {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+input[type="checkbox"] {
+    height: 20px;
+    width: 30px;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=number], select {
+    width:10%;
+    padding: 6px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }

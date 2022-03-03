@@ -16,52 +16,57 @@
         <h1> Password Generator</h1>
         <div class = "child">
             <h2>Enter Criteria for your Password</h2>
-            <!--<div class="slide-container spacebetweenelements">
-                <input type="range" min="1" max="125" value="50" class="slider" id="myRange">
-              </div> -->
+            <div class="slide-container spacebetweenelements">
+                <input type="range" min="1" max="125" value="50">
+              </div> 
             
               <div id="pwdlength">
                 <label for= "password"></label>Password length</label>
-                <input type="number" id="password" min='8' max='128' size="70">
- 
+                 <input type="number" id="password" min='8' max='128'>
+
              </div>
  
-             <!--<div id = "chboxuppercase" >
-                 <label>Include Uppercase letters</label>
+             <div id = "chboxuppercase" >
+                 <label><span>Include Uppercase letters</span></label>
                  <input type="checkbox" id="uppercase">
  
              </div>
  
-             <div id = "chboxlowercase ">
-                 <label>Include Lowercase letters</label>
+             <div id = "chboxlowercase">
+                 <label><span>Include Lowercase letters</span></label>
                  <input type="checkbox" id="uppercase">
  
              </div>
  
-             <div id = "chboxnumbers ">
-                 <label>Include Numbers</label>
+             <div id = "chboxnumbers">
+                 <label><span>Include Numbers</span></label>
                  <input type="checkbox" id="numbers"/>
                  
              </div>
  
              <div id = "chboxsymbols">
-                 <label>Uppercase letters </label>
+                 <label><span>Include special characters</span> </label>
                  <input type="checkbox" id="uppercase"/>
  
              </div>
             <div class = "resultsbox">
                 <button class="generatepassword" id="newpassword">Generate Password</button>
-            </div> -->   
+            </div>  
             
  
  
          </div>
  
     <div class = "passwordbox">
-        <span id="password">This is your password</span>
+        <div id = "passwordresult" >
+            <label><span>Your Password is Here</span></label>
+            <input type="text" id="uppercase">
+
+        </div> 
+        <div>
         <button class="btnCopy" id="clipboard" onclick="newArrayfromPassword()">Copy Password</button>
         <button class="btnRandomize" id="randomizepassword">Generate Random Password</button>
-
+        </div>
     </div>    
  
        
