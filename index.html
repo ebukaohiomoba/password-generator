@@ -10,12 +10,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class = "container">
         <h1> Password Generator</h1>
         <div class = "child">
-            <h2>Enter Criteria for your Password</h2>
+            <h2>Enter Criteria for Your Password</h2>
             <div class="slide-container spacebetweenelements">
                 <input type="range" min="1" max="125" value="50">
               </div> 
@@ -27,25 +28,25 @@
              </div>
  
              <div id = "chboxuppercase" >
-                 <label><span id = "uppercasespan"></span>Include Uppercase letters</span></label>
+                 <label><span id = "uppercasespan"></span>Include Uppercase letters (ABC) </span></label>
                  <input type="checkbox" id="uppercase">
  
              </div>
  
              <div id = "chboxlowercase">
-                 <label><span id = "lowercasespan">Include Lowercase letters</span></label>
+                 <label><span id = "lowercasespan">Include Lowercase letters (abc) </span></label>
                  <input type="checkbox" id="uppercase">
  
              </div>
  
              <div id = "chboxnumbers">
-                 <label><span id = "numberspan">Include Numbers</span></label>
+                 <label><span id = "numberspan">Include Numbers (123)</span></label>
                  <input type="checkbox" id="numbers"/>
                  
              </div>
  
              <div id = "chboxsymbols">
-                 <label><span id = "specialcharacterspan">Include special characters</span> </label>
+                 <label><span id = "specialcharacterspan">Include Special Characters (~!@)</span> </label>
                  <input type="checkbox" id="uppercase"/>
  
              </div>
@@ -59,12 +60,13 @@
  
     <div class = "passwordbox">
         <div id = "passwordresult" >
-            <label><span>Your Password is Here</span></label>
+            <label><span style="color: white; font-size: 20px;">Your Password Is Here</span></label>
             <input type="text" id="uppercase">
-
         </div> 
+    </br>
         <div>
-        <button class="btnCopy" id="clipboard" onclick="newArrayfromPassword()">Copy Password</button>
+        <button class="btnCopy" id="clipboard" onclick="newArrayfromPassword()">Copy Password <i class="fa fa-copy"></i></i></button>
+        <br>
         <button class="btnRandomize" id="randomizepassword">Generate Random Password</button>
         </div>
     </div>    
