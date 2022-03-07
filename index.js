@@ -68,7 +68,11 @@ function copypassword() {
     document.execCommand('copy');
   
     //Alert the copied text //
-    alert("You've just copied your password. Please be sure to store it in a safe place:  " + copyText.value)
+    var copyalert = document.getElementById("clipboard");
+    copyalert.innerHTML=("Copied");
+    setTimeout(function() {
+        copyalert.innerHTML=("Copy Password");
+    }, 2000);
   }
  
 function generaterandompassword(){
