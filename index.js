@@ -6,9 +6,6 @@ var specialcharacters = "!@#$%^&*()";
 var possiblecharacters = upperCaseLetters + lowerCaseLetters + numbers + specialcharacters;
 
 //Gets state of checkboxes
-
-
-//Randomizes values 
 function generatePassword(){
     let isUpperCase = document.getElementById("uppercase").checked;
     console.log(isUpperCase);
@@ -19,9 +16,8 @@ function generatePassword(){
     let isNumber = document.getElementById("numbers").checked;
     console.log(isNumber);
 
+//Checks if all criteria have been selected
     if(isUpperCase==true && isLowerCase==true && isCharacter==true && isNumber==true){
-
-        //Grabs password length from user input and creates new array
         let passwordlength = Number(document.getElementById("password").value); 
 
         var newString = '';
@@ -32,22 +28,20 @@ function generatePassword(){
         document.getElementById("passwordboxresult").value = newString;
     } else {function showAlertMessage() {
 
-        // This is your original text container.
+        // Original text container
         var successmsg = document.getElementById("successmsg");
         var errormsg = document.getElementById("errormsg");
         console.log(successmsg);
         console.log(errormsg);
-    
-        // Now let's fill it with the specific error text (better using HTML here).
         errormsg.innerHTML = "Please select all criteria for a secure password";
     
-        // Hide the original container by adding an .hidden css class.
+        // Hide original container by adding the hidden css class.
         successmsg.classList.add('hidden');
     
-        // Show the error message container by removing its default .hidden css class.
+        // Show the error message by removing its default .hidden css class.
         errormsg.classList.remove('hidden');
     
-       // Then set up an interval: as it ends, revert everything to its original state.
+       // Set up intervals then sets timer to 5000 milliseconds
         setTimeout(function() {
             errormsg.classList.add('hidden');
             successmsg.classList.remove('hidden');
@@ -55,11 +49,9 @@ function generatePassword(){
     }
 }
     
-    // Call the function.
+    // Call the function show alert message function
     showAlertMessage();
 }
-
-
 
 function copypassword() {
     // Get the text field//
@@ -76,12 +68,12 @@ function copypassword() {
   }
  
 function generaterandompassword(){
+    //Check if boxes are checked
     document.getElementById("uppercase").checked = true;
     document.getElementById("lowercase").checked = true;
     document.getElementById("characters").checked = true;
     document.getElementById("numbers").checked = true;
 
-    //Grabs password length from user input and creates new array
     let passwordlength = Math.floor(Math.random() * 129);
     document.getElementById("password").value =  passwordlength;
 
