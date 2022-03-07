@@ -169,7 +169,11 @@ input[type=number], select {
         margin-left: 33%;
     }
 }
-
+@media screen and (max-width: 600px) {
+    ::placeholder {
+        font-size: 11px;
+    }
+}
 #tooltip {
     position: relative;
 }
