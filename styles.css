@@ -192,4 +192,5 @@ input[type=number], select {
 
 #errormsg{
     color: red;
+    font-family: 'Roboto', sans-serif;
 }
