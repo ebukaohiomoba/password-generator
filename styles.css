@@ -111,7 +111,7 @@ h1{
   
 .btn-selector:active {
     background-color: #673e8e;
-    box-shadow: 0 5px #666;
+    box-shadow: 0 5px #200936;
     transform: translateY(4px);
 }
 
