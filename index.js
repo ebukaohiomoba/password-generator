@@ -74,7 +74,9 @@ function generaterandompassword(){
     document.getElementById("characters").checked = true;
     document.getElementById("numbers").checked = true;
 
-    let passwordlength = Math.floor(Math.random() * 129);
+    let min = 8;
+    let max = 128;
+    let passwordlength = Math.floor(Math.random() * (max - min) + min);
     document.getElementById("password").value =  passwordlength;
 
     var newString = '';
