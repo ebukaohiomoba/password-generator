@@ -15,59 +15,52 @@
 <body>
     <div class = "container">
         <h1> Password Generator</h1>
+        <h3 id = "successmsg"></h3>
+        <h3 id = "errormsg"></h3>
         <div class = "child">
-            <h2>Enter Criteria for Your Password</h2>
-            <div class="slide-container spacebetweenelements">
-                <input type="range" min="1" max="125" value="50">
-              </div> 
+            <h2 class = "criteria-text">Enter Criteria for Your Password</h2>
             
               <div id="pwdlength">
-                <label for= "password"></label>Password length</label>
-                 <input type="number" id="password" min='8' max='128'>
+                <label for= "password" data-title="Password Length">Password length</label>
+                 <input type="number" id="password" min='8' max='128' placeholder="Enter Num: 8 - 128">
 
              </div>
  
              <div id = "chboxuppercase" >
-                 <label><span id = "uppercasespan"></span>Include Uppercase letters (ABC) </span></label>
+                 <label><span id = "uppercasespan">Include Uppercase letters</span> <span data-title="ABC" id="tooltip"><i class="fa fa-question-circle" aria-hidden="true"></i></span> </span></label>
                  <input type="checkbox" id="uppercase">
- 
              </div>
  
              <div id = "chboxlowercase">
-                 <label><span id = "lowercasespan">Include Lowercase letters (abc) </span></label>
-                 <input type="checkbox" id="uppercase">
+                 <label><span id = "lowercasespan">Include Lowercase letters</span> <span data-title="abc" id="tooltip"><i class="fa fa-question-circle" aria-hidden="true"></i></span> </span></label>
+                 <input type="checkbox" id="lowercase">
  
              </div>
  
              <div id = "chboxnumbers">
-                 <label><span id = "numberspan">Include Numbers (123)</span></label>
+                 <label><span id = "numberspan">Include Numbers</span> <span data-title="123" id="tooltip"><i class="fa fa-question-circle" aria-hidden="true"></i></span> </span></label>
                  <input type="checkbox" id="numbers"/>
                  
              </div>
  
              <div id = "chboxsymbols">
-                 <label><span id = "specialcharacterspan">Include Special Characters (~!@)</span> </label>
-                 <input type="checkbox" id="uppercase"/>
+                 <label><span id = "specialcharacterspan">Include Special Characters</span> <span data-title="(~!@)" id="tooltip"><i class="fa fa-question-circle" aria-hidden="true"></i></span> </span></label>
+                 <input type="checkbox" id="characters"/>
  
              </div>
             <div class = "resultsbox">
-                <button class="generatepassword" id="newpassword">Generate Password</button>
+                <button class="btn-selector" id="newpassword" onclick="generatePassword()">Generate Password</button>
             </div>  
             
- 
  
          </div>
  
     <div class = "passwordbox">
         <div id = "passwordresult" >
-            <label><span style="color: white; font-size: 20px;">Your Password Is Here</span></label>
-            <input type="text" id="uppercase">
-        </div> 
-    </br>
-        <div>
-        <button class="btnCopy" id="clipboard" onclick="newArrayfromPassword()">Copy Password <i class="fa fa-copy"></i></i></button>
-        <br>
-        <button class="btnRandomize" id="randomizepassword">Generate Random Password</button>
+            <label><span style="color: white; font-size: 20px;"> New Secure Password</span></label>
+            <input type="text" id="passwordboxresult" value="Password">
+        <button class = "btn-selector" id="clipboard" onclick="copypassword()">Copy Password <i class="fa fa-copy"></i></i></button>
+        <button class = "btn-selector" onclick="generaterandompassword()">Generate Random Password</button>
         </div>
     </div>    
  
