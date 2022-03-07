@@ -14,13 +14,13 @@ The project is created with:
 HTML, CSS, and JavaScript 
 
 ### Steps
-Clone the repository using git clone (https://github.com/ebukaohiomoba/password-generator.git)
-Open the index.html file
-You're set!
+- Clone the repository using git clone (https://github.com/ebukaohiomoba/password-generator.git)
+- Open the index.html file
+- You're set!
 
 ### Authors
 
-Chukwuebuka Ohiomoba
-Shareese Rucker
-Garth Chadband
-Patrick Kema
+Chukwuebuka Ohiomoba</br>
+Shareese Rucker</br>
+Garth Chadband</br>
+Patrick Kema</br>
