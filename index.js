@@ -166,7 +166,7 @@ if(isUpperCase==true && isLowerCase==true && isCharacter==true && isNumber==true
 } 
 
 if(isUpperCase==false && isLowerCase==false && isCharacter==false && isNumber==false){
-    
+    //Show alert message
     function showAlertMessage() {
 
         // Original text container
@@ -190,11 +190,9 @@ if(isUpperCase==false && isLowerCase==false && isCharacter==false && isNumber==f
     }   showAlertMessage();
 
 }
-    
-    // Call the function show alert message function
 }
 
-
+//Copies the contents of password box
 function copypassword() {
     // Get the text field//
     let copyText = document.getElementById("passwordboxresult");
@@ -216,8 +214,11 @@ function generaterandompassword(){
     document.getElementById("characters").checked = true;
     document.getElementById("numbers").checked = true;
 
+    //Defines max and min values
     let min = 8;
     let max = 128;
+
+    //Creates random password length in bounds of min and max
     let passwordlength = Math.floor(Math.random() * (max - min) + min);
     document.getElementById("password").value =  passwordlength;
 
