@@ -4,7 +4,7 @@
 
  https://ebukaohiomoba.github.io/password-generator/
 
- This project is a password generator that allows users to select from four different criteria. 
+ This project is a password generator that allows users to select from four different criteria. After doing so, the application generates a random password.
 
  ### Goal
 
